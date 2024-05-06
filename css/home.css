@@ -1,0 +1,389 @@
+
+  
+  body{
+    background-image: url(../images/fondo.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover; /* o background-size: contain; */
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+
+
+.nav-item{
+  margin: 10px;
+  transition: 1s;
+}
+
+.nav-item:hover{
+  transform: scale(1.1);
+
+}
+
+
+
+
+
+
+.masthead{
+    height:auto !important;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.bienvenido{
+  font-size: 50px;
+}
+
+#tr {
+  transition: background-color 0.5s ease;
+}
+
+.bg-dark {
+  background-color: #000000 !important; 
+}
+
+.bg-transparent {
+  background-color: transparent !important; 
+}
+
+
+
+
+
+
+.boton1{
+    margin:0 20px 0 9px;
+}
+/* Cambia el fondo y el color del texto al pasar el mouse */
+.boton1:hover {
+    background-color: #8ad1fa; /* Color de fondo al pasar el mouse para boton1 */
+    color: rgb(0, 0, 0); /* Color del texto al pasar el mouse para boton1 */
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.boton2:hover {
+    background-color: #007bff; /* Color de fondo al pasar el mouse para boton2 */
+    color: rgb(255, 255, 255); /* Color del texto al pasar el mouse para boton2 */
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+@keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:down"] {
+    animation: 1.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+  }
+
+
+
+#about{
+    position: relative;
+    top:400px;
+    color:#02053b;
+    padding: 100px;
+    align-content: center;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    
+    
+
+}
+
+
+
+  @media(max-width:800px){
+        #logo{
+            width: 160px;
+            height: auto;
+          
+        }
+
+        #t1{
+            font-size:18px;
+            text-align: start;
+        }
+
+        #t2{
+            font-size:18px;
+            text-align:start;
+        }
+
+        
+  }
+
+  #myv{
+    background-color: white;
+    position: relative;
+    top: 400px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+
+  }
+  .mm {
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.text-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.text-slide.active {
+    display: block;
+}
+
+.mision {
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s ease;
+  
+}
+   
+
+
+.vision {
+  position: relative;
+  background-image: url(../images/IMG_20221204_112830_156_edit_131462207536189-1024x674.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin:0;
+  padding: 0;
+}
+
+.vision::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(5, 6, 70, 0.692), rgb(0, 0, 0));
+  z-index: 1;
+}
+
+.vision h2 {
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.vision p{
+  z-index: 2;
+  position: relative;
+  top: -40px;
+}
+
+
+.text-slide p {
+  padding-top: 40px;
+  text-align:justify; /* Alinea los párrafos al centro */
+  font-size: 20px; /* Tamaño de fuente más pequeño */
+  max-width: 50%; /* Limita el ancho del texto para que no ocupe todo el contenedor */
+  margin: 0 auto; /* Centra horizontalmente los párrafos */
+  line-height: 1.5; /* Espaciado entre líneas */
+  
+}
+
+@media(max-width:850px){
+  
+  .text-slide p {
+    padding-top: 20px;
+    text-align:justify; /* Alinea los párrafos al centro */
+    font-size: 15px; /* Tamaño de fuente más pequeño */
+    max-width: 50%; /* Limita el ancho del texto para que no ocupe todo el contenedor */
+    margin: 0 auto; /* Centra horizontalmente los párrafos */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }
+  
+  
+}
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #130872;
+    z-index: 2;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:right"] {
+  animation: 1.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+
+
+
+   
+
+  #services{
+    position: relative;
+    top: 400px;
+    color:#270257;
+    text-align: center;
+    padding: 80px;
+    background-color: white;
+    
+  }
+
+  #services p{
+    color: #0184ff !important;
+  }
+  
+
+ 
+
+  
+
+ 
+
+ 
+ 
+ 
+
+
+
+
+  footer{
+    position: relative;
+    top: 400px;
+    background-color: #000000;
+    border-radius: 10px 10px 0 0 ;
+
+  }
+  
+  #logo{
+    position: relative;
+    top: -30px;
+  }
+
+  #myCarousel img{
+    width:auto;
+    height: 620px;
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen para ajustarla */
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.616)); /* Utiliza un degradado para el oscurecimiento */
+}
+
+#gallery{
+  position: relative;
+  top: 300px;
+  
+ 
+ 
+}
+
+.t2{
+  position: relative;
+  top: 600px;
+  z-index: 1;
+}
+
+.t2 h2{
+  font-size: 50px;
+  text-transform:uppercase;
+}
+
+
+
+
+.flex-item {
+  margin-right: 20px; /* Ajusta el espacio entre el texto y la imagen */
+}
+
+
+.mision, .vision {
+  opacity: 0;
+  transform: translatex(1000px);
+  animation: fadeAndSlideUp 1s ease-out forwards;
+}
+
+@keyframes fadeAndSlideUp {
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Ajusta el valor de alfa para cambiar la opacidad */
+  z-index: 1050; /* Asegura que el fondo atenuado esté por debajo del modal */
+}
+
+.modal-header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-header-logo img {
+  width: 90px; /* Ajusta el tamaño del logo según tus preferencias */
+
+}
+
+.modal-title{
+  padding-top: 30px;
+}
